@@ -11,10 +11,11 @@ properties:
       - code-server
       - --allow-http
       - --password=Password123!
-      - --port=80
+      - --port=8443
+      - --cert
       image: codercom/code-server
       ports:
-      - port: 80
+      - port: 8443
       resources:
         requests:
           cpu: 1.0
@@ -28,7 +29,7 @@ properties:
   ipAddress:
     dnsNameLabel: code-server
     ports:
-    - port: 80
+    - port: 8443
       protocol: TCP
     type: Public
     
