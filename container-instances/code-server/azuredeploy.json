@@ -24,8 +24,8 @@
   "variables": {
     "containerName": "code-server",
     "containerDNS": "[concat(variables('containerName'), '-', uniqueString(subscription().subscriptionId))]",
-    "image": "codercom/code-server",
-    "port": "8443",
+    "image": "codercom/code-server:2.1643-vsc1.39.2",
+    "port": "8080",
     "command-line": ["code-server", "--cert", "[concat('--password=', parameters('password'))]", "[concat('--port=', variables('port'))]"],
     "project-share": "code-server-proj",
     "data-share": "code-server-data"
