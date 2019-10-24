@@ -25,8 +25,8 @@
     "containerName": "code-server",
     "containerDNS": "[concat(variables('containerName'), '-', uniqueString(subscription().subscriptionId))]",
     "image": "codercom/code-server",
-    "port": "80",
-    "command-line": ["code-server", "--allow-http", "[concat('--password=', parameters('password'))]", "[concat('--port=', variables('port'))]"],
+    "port": "8443",
+    "command-line": ["code-server", "--cert", "[concat('--password=', parameters('password'))]", "[concat('--port=', variables('port'))]"],
     "project-share": "code-server-proj",
     "data-share": "code-server-data"
   },
