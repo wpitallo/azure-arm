@@ -56,19 +56,19 @@
                 "name": "data-vol",
                 "mountPath": "/root/.local/share/code-server"
               }],
-               "environmentVariables": [
-                {
-                    "name": "PASSWORD",
-                    "value": "[parameters('password')]"
-                },
-            ],
               "resources": {
                 "requests": {
                   "cpu": "1",
                   "memoryInGB": "1.5"
                 }
               }
-            }
+            },
+            "environmentVariables": [
+                {
+                    "name": "PASSWORD",
+                    "value": "[parameters('password')]"
+                },
+            ]
           }
         ],
         "osType": "Linux",
