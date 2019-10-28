@@ -26,7 +26,7 @@
     "containerDNS": "[concat(variables('containerName'), '-', uniqueString(subscription().subscriptionId))]",
     "image": "codercom/code-server:v2",
     "port": "8080",
-    "command-line": ["PASSWORD=[parameters('password')] code-server", "--cert", "[concat('--port=', variables('port'))]"],
+    "command-line": ["PASSWORD=AZURE1 code-server", "--cert", "[concat('--port=', variables('port'))]"],
     "project-share": "code-server-proj",
     "data-share": "code-server-data"
   },
