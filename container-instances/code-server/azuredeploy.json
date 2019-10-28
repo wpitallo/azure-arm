@@ -50,11 +50,11 @@
               ],
               "volumeMounts": [{
                 "name": "project-vol",
-                "mountPath": "/root/project"
+                "mountPath": "/home/project"
               },
               {
                 "name": "data-vol",
-                "mountPath": "/root/.local/share/code-server"
+                "mountPath": "/home/.local/share/code-server"
               }],
               "resources": {
                 "requests": {
