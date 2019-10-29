@@ -50,7 +50,7 @@
               ],
               "volumeMounts": [{
                 "name": "project-vol",
-                "mountPath": "/home/coder/"
+                "mountPath": "/home/coder/project/"
               },
               {
                 "name": "data-vol",
