@@ -36,12 +36,12 @@
       "type": "Microsoft.ContainerInstance/containerGroups",
       "apiVersion": "2018-10-01",
       "location": "[resourceGroup().location]",
-      "mountOptions" : "mfsymlinks",
       "properties": {
         "containers": [
           {
             "name": "[variables('containerName')]",
             "properties": {
+                    "mountOptions" : "mfsymlinks",
               "image": "[variables('image')]",
               "command": "[variables('command-line')]",
               "ports": [
