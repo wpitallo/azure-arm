@@ -87,18 +87,19 @@
           "azureFile": {
             "shareName": "[variables('project-share')]",
             "storageAccountName": "[parameters('storageAcctName')]",
-            "storageAccountKey": "[parameters('storageAcctKey')]"
+            "storageAccountKey": "[parameters('storageAcctKey')]",
+            "mountOptions" : "mfsymlinks"
           },
-          "mountOptions" : "mfsymlinks"
+          
         },
         {
           "name": "data-vol",
           "azureFile": {
             "shareName": "[variables('data-share')]",
             "storageAccountName": "[parameters('storageAcctName')]",
-            "storageAccountKey": "[parameters('storageAcctKey')]"
-          },
-          "mountOptions" : "mfsymlinks"
+            "storageAccountKey": "[parameters('storageAcctKey')]",
+            "mountOptions" : "mfsymlinks"
+          }
         }]
       }
     }
