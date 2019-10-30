@@ -50,11 +50,11 @@
               ],
               "volumeMounts": [{
                 "name": "project-vol",
-                "mountPath": "/home/coder/project/,mfsymlinks"
+                "mountPath": "/home/coder/project/"
               },
               {
                 "name": "data-vol",
-                "mountPath": "/home/coder/.local/share/code-server/,mfsymlinks"
+                "mountPath": "/home/coder/.local/share/code-server/"
               }],
               "resources": {
                 "requests": {
