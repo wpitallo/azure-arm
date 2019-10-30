@@ -41,7 +41,6 @@
           {
             "name": "[variables('containerName')]",
             "properties": {
-                    "mountOptions" : "mfsymlinks",
               "image": "[variables('image')]",
               "command": "[variables('command-line')]",
               "ports": [
@@ -89,7 +88,8 @@
             "shareName": "[variables('project-share')]",
             "storageAccountName": "[parameters('storageAcctName')]",
             "storageAccountKey": "[parameters('storageAcctKey')]"
-          }
+          },
+          "mountOptions" : "mfsymlinks"
         },
         {
           "name": "data-vol",
@@ -97,7 +97,8 @@
             "shareName": "[variables('data-share')]",
             "storageAccountName": "[parameters('storageAcctName')]",
             "storageAccountKey": "[parameters('storageAcctKey')]"
-          }
+          },
+          "mountOptions" : "mfsymlinks"
         }]
       }
     }
