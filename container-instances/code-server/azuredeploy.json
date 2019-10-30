@@ -88,8 +88,7 @@
               "shareName": "[variables('project-share')]",
               "storageAccountName": "[parameters('storageAcctName')]",
               "storageAccountKey": "[parameters('storageAcctKey')]"
-            },
-            "mountOptions": "mfsymlinks"
+            }
           },
           {
             "name": "data-vol",
@@ -97,8 +96,7 @@
               "shareName": "[variables('data-share')]",
               "storageAccountName": "[parameters('storageAcctName')]",
               "storageAccountKey": "[parameters('storageAcctKey')]"
-            },
-            "mountOptions": "mfsymlinks"
+            }
           }]
         }
       }
