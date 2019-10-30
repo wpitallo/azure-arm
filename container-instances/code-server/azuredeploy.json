@@ -87,7 +87,8 @@
             "azureFile": {
               "shareName": "[variables('project-share')]",
               "storageAccountName": "[parameters('storageAcctName')]",
-              "storageAccountKey": "[parameters('storageAcctKey')]"
+              "storageAccountKey": "[parameters('storageAcctKey')]",
+              "mountOptions": "mfsymlinks"
             }
           },
           {
@@ -95,7 +96,8 @@
             "azureFile": {
               "shareName": "[variables('data-share')]",
               "storageAccountName": "[parameters('storageAcctName')]",
-              "storageAccountKey": "[parameters('storageAcctKey')]"
+              "storageAccountKey": "[parameters('storageAcctKey')]",
+              "mountOptions": "mfsymlinks"
             }
           }]
         }
